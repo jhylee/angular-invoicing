@@ -125,6 +125,172 @@ div.container{
   display: none;
 }
 
+
+.btn-status-default {
+  border-radius: 2px;
+  color: #E8E8E8;
+  border-style: none;
+  background-color: #01579B;
+  border-color: #01579B;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 2px 2px 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  outline: none;
+}
+.btn-status-default:hover,
+.btn-status-default:focus,
+.btn-status-default.focus,
+.btn-status-default:active,
+.btn-status-default.active,
+.open > .dropdown-toggle.btn-status-default {
+  color: #E8E8E8;
+  background-color: #0D47A1;
+  border-color: #0D47A1;
+  outline: none;
+}
+.btn-status-default:active,
+.btn-status-default.active,
+.open > .dropdown-toggle.btn-status-default {
+  background-image: none;
+}
+.btn-status-default.disabled,
+.btn-status-default[disabled],
+fieldset[disabled] .btn-status-default,
+.btn-status-default.disabled:hover,
+.btn-status-default[disabled]:hover,
+fieldset[disabled] .btn-status-default:hover,
+.btn-status-default.disabled:focus,
+.btn-status-default[disabled]:focus,
+fieldset[disabled] .btn-status-default:focus,
+.btn-status-default.disabled.focus,
+.btn-status-default[disabled].focus,
+fieldset[disabled] .btn-status-default.focus,
+.btn-status-default.disabled:active,
+.btn-status-default[disabled]:active,
+fieldset[disabled] .btn-status-default:active,
+.btn-status-default.disabled.active,
+.btn-status-default[disabled].active,
+fieldset[disabled] .btn-status-default.active {
+  color: #fff;
+  background-color: #01579B;
+  @include border-radius(2px);
+  opacity: 0.5;
+  outline: none;
+}
+
+.btn-status-danger {
+  border-radius: 2px;
+  color: #E8E8E8;
+  border-style: none;
+  background-color: #DD2C00;
+  border-color: #DD2C00;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 2px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  outline: none;
+}
+.btn-status-danger:hover,
+.btn-status-danger:focus,
+.btn-status-danger.focus,
+.btn-status-danger:active,
+.btn-status-danger.active,
+.open > .dropdown-toggle.btn-status-danger {
+  @include border-radius(2px);
+  color: #E8E8E8;
+  background-color: #B71C1C;
+  border-color: #B71C1C;
+  outline: none;
+}
+.btn-status-danger.disabled,
+.btn-status-danger[disabled],
+fieldset[disabled] .btn-status-danger,
+.btn-status-danger.disabled:hover,
+.btn-status-danger[disabled]:hover,
+fieldset[disabled] .btn-status-danger:hover,
+.btn-status-danger.disabled:focus,
+.btn-status-danger[disabled]:focus,
+fieldset[disabled] .btn-status-danger:focus,
+.btn-status-danger.disabled.focus,
+.btn-status-danger[disabled].focus,
+fieldset[disabled] .btn-status-danger.focus,
+.btn-status-danger.disabled:active,
+.btn-status-danger[disabled]:active,
+fieldset[disabled] .btn-status-danger:active,
+.btn-status-danger.disabled.active,
+.btn-status-danger[disabled].active,
+fieldset[disabled] .btn-status-danger.active {
+  border-radius: 2px;
+  color: #E8E8E8;
+  background-color: #DD2C00;
+  border-color: #DD2C00;
+  opacity: 0.3;
+  outline: none;
+}
+.btn-status-success {
+  border-radius: 2px;
+  color: #E8E8E8;
+  border-style: none;
+  background-color: #43A047;
+  border-color: #43A047;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 2px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  outline: none;
+}
+.btn-status-success:hover,
+.btn-status-success:focus,
+.btn-status-success.focus,
+.btn-status-success:active,
+.btn-status-success.active,
+.open > .dropdown-toggle.btn-status-success {
+  border-radius: 2px;
+  color: #E8E8E8;
+  background-color: #1B5E20;
+  border-color: #1B5E20;
+  outline: none;
+}
+.btn-status-success.disabled,
+.btn-status-success[disabled],
+fieldset[disabled] .btn-status-success,
+.btn-status-success.disabled:hover,
+.btn-status-success[disabled]:hover,
+fieldset[disabled] .btn-status-success:hover,
+.btn-status-success.disabled:focus,
+.btn-status-success[disabled]:focus,
+fieldset[disabled] .btn-status-success:focus,
+.btn-status-success.disabled.focus,
+.btn-status-success[disabled].focus,
+fieldset[disabled] .btn-status-success.focus,
+.btn-status-success.disabled:active,
+.btn-status-success[disabled]:active,
+fieldset[disabled] .btn-status-success:active,
+.btn-status-success.disabled.active,
+.btn-status-success[disabled].active,
+fieldset[disabled] .btn-status-success.active {
+  border-radius: 2px;
+  color: #fff;
+  background-color: #43A047;
+  opacity: 0.6;
+  outline: none;
+}
+a.btn-status-default:hover,
+a.btn-status-default:active,
+a.btn-status-default:focus,
+a.btn-status-danger:hover,
+a.btn-status-danger:active,
+a.btn-status-danger:focus,
+a.btn-status-success:hover,
+a.btn-status-success:active,
+a.btn-status-success:focus {
+  text-decoration: none;
+}
+
 .copy {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   width: 100%;

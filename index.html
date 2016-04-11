@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Simple Invoicing - Built with AngularJS</title>
+  <title>Coastline Invoice</title>
   <meta charset='utf-8'>
   <meta name="description" content="AngularJS and Angular Code Example for creating Invoices and Invoicing Application">
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
@@ -13,7 +14,7 @@
   <div class="container" width="800px" id="invoice" >
     <div class="row">
       <div class="col-xs-12 heading">
-        INVOICE
+        Your Invoice to {{invoice.customer_info.web_link}}
       </div>
     </div>
     <div class="row branding">
@@ -54,17 +55,17 @@
     </div>
     <div class="items-table">
       <div class="row header">
-        <div class="col-xs-1">&nbsp;</div>
-        <div class="col-xs-5">Description</div>
+        <div class="col-xs-2">&nbsp;</div>
+        <div class="col-xs-4">Description</div>
         <div class="col-xs-2">Quantity</div>
         <div class="col-xs-2">Cost {{currencySymbol}}</div>
         <div class="col-xs-2 text-right">Total</div>
       </div>
       <div class="row invoice-item" ng-repeat="item in invoice.items" ng-animate="'slide-down'">
-        <div class="col-xs-1 remove-item-container">
-          <a href ng-hide="printMode" ng-click="removeItem(item)" class="btn btn-danger">[X]</a>
+        <div class="col-xs-2 remove-item-container">
+          <a href ng-hide="printMode" ng-click="removeItem(item)" class="btn-status-danger"><i class="fa fa-minus"></i></a>
         </div>
-        <div class="col-xs-5 input-container">
+        <div class="col-xs-4 input-container">
           <input ng-model="item.description" placeholder="Description" />
         </div>
         <div class="col-xs-2 input-container">
@@ -79,7 +80,7 @@
       </div>
       <div class="row invoice-item">
         <div class="col-xs-12 add-item-container" ng-hide="printMode">
-          <a class="btn btn-primary" href ng-click="addItem()" >[+]</a>
+          <a class="btn-status-success" href ng-click="addItem()" ><i class="fa fa-plus"></i></a>
         </div>
       </div>
       <div class="row">
@@ -96,19 +97,12 @@
       </div>
     </div>
     <div class="row noPrint actions">
-      <a href="#" class="btn btn-primary" ng-show="printMode" ng-click="printInfo()">Print</a>
-      <a href="#" class="btn btn-primary" ng-click="clearLocalStorage()">Reset</a>
-      <a href="#" class="btn btn-primary" ng-hide="printMode" ng-click="printMode = true;">Turn On Print Mode</a>
-      <a href="#" class="btn btn-primary" ng-show="printMode" ng-click="printMode = false;">Turn Off Print Mode</a>
+      <a href="#" class="btn-status-default" ng-show="printMode" ng-click="printInfo()">Print</a>
+      <a href="#" class="btn-status-default" ng-click="clearLocalStorage()">Reset</a>
+      <a href="#" class="btn-status-default" ng-hide="printMode" ng-click="printMode = true;">Turn On Print Mode</a>
+      <a href="#" class="btn-status-default" ng-show="printMode" ng-click="printMode = false;">Turn Off Print Mode</a>
     </div>
   </div>
 
-  <div ng-hide="printMode" class="copy noPrint">
-    <a href="http://jasdeep.ca/?utm_source=angular_invoicing">Jasdeep Singh</a> &amp;
-    <a href="http://github.com/manpreetrules">Manpreet Singh</a>
-    Made with
-    <span class="love">&#9829;</span> in Toronto by
-    <a href="http://metawarelabs.com/?utm_source=angular_invoicing">Metaware Labs Inc.</a>
-  </div>
 </body>
 </html>

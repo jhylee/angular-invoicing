@@ -1,28 +1,28 @@
 angular.module('invoicing', [])
 
 // The default logo for the invoice
-.constant('DEFAULT_LOGO', 'images/metaware_logo.png')
+.constant('DEFAULT_LOGO', 'images/coastline-logo.png')
 
 // The invoice displayed when the user first uses the app
 .constant('DEFAULT_INVOICE', {
   tax: 13.00,
   invoice_number: 10,
   customer_info: {
-    name: 'Mr. John Doe',
-    web_link: 'John Doe Designs Inc.',
-    address1: '1 Infinite Loop',
-    address2: 'Cupertino, California, US',
-    postal: '90210'
+    name: 'Joseph Lee',
+    web_link: 'Coastline Market',
+    address1: '1223 Yonge Street',
+    address2: 'Toronto, Toronto, CA',
+    postal: 'V4Q 1E4'
   },
   company_info: {
-    name: 'Metaware Labs',
-    web_link: 'www.metawarelabs.com',
-    address1: '123 Yonge Street',
-    address2: 'Toronto, ON, Canada',
+    name: 'The Seafood Shop',
+    web_link: 'www.theseafoodshop.com',
+    address1: '123 Tantallon Street',
+    address2: 'Tantallon, NS, Canada',
     postal: 'M5S 1B6'
   },
   items:[
-    { qty: 10, description: 'Gadget', cost: 9.95 }
+    { qty: 10, description: 'Atlantic Cod', cost: 2.95 }
   ]
 })
 
@@ -117,7 +117,7 @@ angular.module('invoicing', [])
   }
 
   return service;
-  
+
 }])
 
 // Main application controller
